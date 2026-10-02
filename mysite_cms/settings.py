@@ -192,7 +192,11 @@ SITE_ID = 1
 # A base template is part of this setup
 # https://docs.django-cms.org/en/release-5.1.x/reference/configuration.html#cms-templates
 
-CMS_TEMPLATES = (("base.html", _("Standard")),)
+CMS_TEMPLATES = [
+    ("base.html", "Default"),
+    ("sailor_home.html", "Sailor - Home"),
+    ("sailor_page.html", "Sailor - Content Page"),
+]
 
 
 # Enable permissions
